@@ -1,13 +1,13 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import {
-  Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage
 } from '@/components/ui/form';
+import { FormProvider } from 'react-hook-form';
 import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useSearchParams } from 'next/navigation';
@@ -45,11 +45,11 @@ export default function UserAuthForm() {
 
   return (
     <>
-      <Form
-        form={form}
-        onSubmit={form.handleSubmit(onSubmit)}
-        className='w-full space-y-2'
-      >
+      <FormProvider {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className='w-full space-y-2'
+        >
         <FormInput
           control={form.control}
           name='email'
@@ -64,7 +64,8 @@ export default function UserAuthForm() {
         >
           Continue With Email
         </Button>
-      </Form>
+        </form>
+      </FormProvider>
       <div className='relative'>
         <div className='absolute inset-0 flex items-center'>
           <span className='w-full border-t' />
