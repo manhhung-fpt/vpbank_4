@@ -4,7 +4,7 @@ A full-stack intelligent credit scoring system powered by AI/ML technologies, fe
 
 ## 🎯 Features
 
-- **AI-Powered Credit Scoring**: XGBoost ML model for accurate credit score calculation (300-850 range)
+- **AI-Powered Credit Scoring**: XGBoost ML models for accurate credit score calculation (300-850 range)
 - **Batch Credit Scoring**: Upload and analyze multiple applications at once (CSV, Excel, JSON)
 - **Explainable AI**: OpenAI GPT-3.5 generates human-readable explanations for credit decisions
 - **Risk Assessment**: Automatic categorization into Low/Medium/High/Very High risk
