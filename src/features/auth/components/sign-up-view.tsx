@@ -59,7 +59,7 @@ export default function SignUpViewPage({ stars }: { stars: number }) {
             target='_blank'
             href={'https://github.com/kiranism/next-shadcn-dashboard-starter'}
           >
-            <div className='flex items-center'>
+            {/* <div className='flex items-center'>
               <GitHubLogoIcon className='size-4' />
               <span className='ml-1 inline'>Star on GitHub</span>{' '}
             </div>
@@ -69,7 +69,7 @@ export default function SignUpViewPage({ stars }: { stars: number }) {
                 fill='currentColor'
               />
               <span className='font-display font-medium'>{stars}</span>
-            </div>
+            </div> */}
           </Link>
           <ClerkSignUpForm
             initialValues={{

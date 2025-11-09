@@ -59,17 +59,17 @@ export default function SignInViewPage({ stars }: { stars: number }) {
             target='_blank'
             href={'https://github.com/kiranism/next-shadcn-dashboard-starter'}
           >
-            <div className='flex items-center'>
+            {/* <div className='flex items-center'>
               <GitHubLogoIcon className='size-4' />
               <span className='ml-1 inline'>Star on GitHub</span>{' '}
-            </div>
-            <div className='ml-2 flex items-center gap-1 text-sm md:flex'>
+            </div> */}
+            {/* <div className='ml-2 flex items-center gap-1 text-sm md:flex'>
               <IconStar
                 className='size-4 text-gray-500 transition-all duration-300 group-hover:text-yellow-300'
                 fill='currentColor'
               />
               <span className='font-display font-medium'>{stars}</span>
-            </div>
+            </div> */}
           </Link>
           <ClerkSignInForm
             initialValues={{

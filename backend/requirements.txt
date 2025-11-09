@@ -1,0 +1,26 @@
+# FastAPI Core
+fastapi>=0.115.0
+uvicorn>=0.30.6
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+
+# AI/ML - Using pre-built wheels (compatible versions)
+openai==1.35.0
+xgboost>=2.1.0
+# Removed scikit-learn - not needed for credit scoring
+numpy>=1.26.0
+pandas>=2.2.0
+openpyxl>=3.1.0  # For Excel file support
+
+# Database
+sqlalchemy==2.0.35
+aiosqlite==0.20.0
+
+# Utilities
+python-dotenv==1.0.1
+python-multipart==0.0.12
+httpx==0.27.2
+
+# CORS
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
